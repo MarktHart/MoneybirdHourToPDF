@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Moneybird Hour Exporter",
+    "version": "0.2",
+    "description": "Simple plugin to export Moneybird hours",
+    "content_scripts": [
+        {
+            "js": ["scripts/main.js"],
+            "matches": [
+                "https://moneybird.com/*/time_entries_report*"
+            ]
+        }
+    ]
+}
